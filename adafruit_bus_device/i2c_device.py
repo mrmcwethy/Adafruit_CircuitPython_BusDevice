@@ -80,8 +80,9 @@ class I2CDevice:
     def read_into(self, buf, **kwargs):
         """
         .. warning:: This method will be deprecated at some time in the future.
-        Please use `readinto`() instead.  `readinto`() is functionally
-        equivalent to read_into(), same parameters and same actions.
+            Please use `readinto` method instead.  `readinto` method is
+            functionally equivalent to read_into, same parameters and same 
+            actions.
         """
         self.i2c.readfrom_into(self.device_address, buf, **kwargs)
 
